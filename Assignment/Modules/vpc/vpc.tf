@@ -71,16 +71,6 @@ resource "aws_subnet" "database-subnet-2" {
   }
 }
 
-resource "aws_subnet" "database-subnet" {
-  vpc_id            = aws_vpc.my-vpc.id
-  cidr_block        = "10.0.3.0/24"
-  availability_zone = "eu-west-2b"
-
-  tags = {
-    Name = "Database"
-  }
-}
-
 # Create Internet Gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my-vpc.id
