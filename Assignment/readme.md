@@ -28,11 +28,14 @@ In this not assignment I have not wrriten the terraform script for all the servi
 
 #how it works:
 Terraform init
+
 Terraform plan
+
 Terraform apply -auto-approve
+
 
 In ec2 user data I have passed the script to install apache for webserver at the time of ec2 initialization
 once the infra creation compelete we can hit the alb dns to open the web page.
 
-In this code currently we can hit the web page using HTTP for HTTPS need to configure R53 and provide the SSL certificate which is not in the current code.
+In this code currently we can hit the web page using HTTP for HTTPS need to configure R53 and provide the SSL certificate which is not in the current code, I have wrriten the code basic infra it has not all module which is in design document.
 
